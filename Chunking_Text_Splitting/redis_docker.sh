@@ -1,10 +1,10 @@
 #!/bin/bash
 
-docker pull redis
+docker pull redis/redis-stack-server:latest
 
-docker run -d -p 6379:6379 --name redis-container redis
+docker run -d -p 6379:6379 --name redis-container redis/redis-stack-server:latest
 
-if docker ps | grep -q my-redis-container; then
+if docker ps | grep -q redis-container; then
     echo "Redis container is running."
 else
     echo "Failed to start Redis container."
