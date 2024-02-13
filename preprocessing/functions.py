@@ -2,7 +2,7 @@
 # This file is part of the NEAT Project suite of libraries
 
 import re
-from neattext.pattern_data import (
+from pattern_data import (
     EMAIL_REGEX,
     NUMBERS_REGEX,
     PHONE_REGEX,
